@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.google.devrel.vrviewapp"
         minSdkVersion 19
-        targetSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -20,6 +20,14 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.android.support:design:23.3.0'
+    implementation 'com.android.support:appcompat-v7:28.+'
+    implementation 'com.android.support:design:28.+'
+
+    implementation 'com.google.vr:sdk-audio:1.10.0'
+    implementation 'com.google.vr:sdk-base:1.10.0'
+    implementation 'com.google.vr:sdk-common:1.10.0'
+    implementation 'com.google.vr:sdk-commonwidget:1.10.0'
+    implementation 'com.google.vr:sdk-panowidget:1.10.0'
+    implementation 'com.google.vr:sdk-videowidget:1.10.0'
+
 }
